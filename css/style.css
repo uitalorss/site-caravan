@@ -1,0 +1,21 @@
+body{
+    padding-top: 76.5px;
+}
+
+.icone{
+    height: 100px;
+}
+
+#home-quote{
+    background: url(../img/bg-quote.jpg) center center;
+    background-size: cover;
+}
+
+.pergunta{
+    text-decoration: none;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
