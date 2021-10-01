@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    <title>Caravan - Locais</title>
+    <title>Caravan - Planos</title>
 </head>
 <body>
     <!-- Modal -->
@@ -55,7 +55,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent" >
             <ul class="navbar-nav ms-auto ">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Locais
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -65,7 +65,7 @@
                     </ul>
                   </li>
                 <li class="nav-item ">
-                    <a class="nav-link" href="planos.html">Planos</a>
+                    <a class="nav-link active" href="planos.html">Planos</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="contato.html">Contato</a>
@@ -79,83 +79,63 @@
     </nav>
     <section class="galeria container">
         <div class="my-5 text-center">
-            <span class="h4 text-uppercase">O melhor destino da sua viagem</span>
-            <h1 class="display-3 text-primary">Descubra Dublin</h1>
-            <div class="row mt-5">
-                <div class="col-md">
-                    <img class="img-fluid mb-3" src="img/local/foto-1.jpg" alt="foto-1">
-                    <img class="img-fluid mb-3" src="img/local/foto-2.jpg" alt="foto-2">
-                    <img class="img-fluid mb-4" src="img/local/foto-3.jpg" alt="foto-3">
+            <span class="h4 text-uppercase">Sua viagem, seu plano</span>
+            <h1 class="display-3 text-primary">Escolha o seu plano</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-6 mb-5">
+                <div class="bg-light shadow p-4">
+                    <h2>Gold</h2>
+                    <ul class="list-unstyled lista-planos">
+                        <li>30 dias de viagem</li>
+                        <li>3 destinos diferentes</li>
+                        <li>Tudo pago pela empresa</li>
+                        <li>Ingresso para festas</li>
+                        <select class="form-select mt-4" aria-label="Default select example">
+                            <option selected>Selecione a cidade</option>
+                            <option value="1">Paris</option>
+                            <option value="2">Dublin</option>
+                            <option value="3">Califórnia</option>
+                        </select>
+                        <div class="row mt-4 align-items-center">
+                            <div class="col d-grid gap-2">
+                                <a class="btn btn-primary btn-lg btn-block" href="">Comprar Plano</a>
+                            </div>
+                            <div class="col">
+                                <span class=" h3">R$ 5.000,00</span> 
+                            </div>
+                        </div>
+                    </ul>
                 </div>
-                <div class="col-md">
-                    <img class="img-fluid mb-4" src="img/local/foto-4.jpg" alt="foto-4">
-                    <img class="img-fluid mb-4" src="img/local/foto-5.jpg" alt="foto-5">
-                </div>
-                <div class="col-md">
-                    <img class="img-fluid mb-4" src="img/local/foto-6.jpg" alt="foto-6">
-                    <img class="img-fluid mb-4" src="img/local/foto-7.jpg" alt="foto-7">
+            </div>
+            <div class="col-md-6 rounded ">
+                <div class="bg-light rounded shadow p-4">
+                    <h2>Platinum<span class="ms-2 badge bg-success">Novo</span></h2>
+                    <ul class="list-unstyled lista-planos">
+                        <li>50 dias de viagem</li>
+                        <li>6 destinos diferentes</li>
+                        <li>Tudo pago pela empresa</li>
+                        <li>Ingresso para festas</li>
+                        <select class="form-select mt-4" aria-label="Default select example">
+                            <option selected>Selecione a cidade</option>
+                            <option value="1">Paris</option>
+                            <option value="2">Dublin</option>
+                            <option value="3">Califórnia</option>
+                        </select>
+                        <div class="row mt-4 align-items-center">
+                            <div class="col d-grid gap-2">
+                                <a class="btn btn-primary btn-lg btn-block" href="">Comprar Plano</a>
+                            </div>
+                            <div class="col ">
+                                <span class=" h3">R$ 7.500,00</span> 
+                            </div>
+                        </div>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
-    <section class="eventos container mb-5">
-        <div class="my-5 text-center">
-            <span class="h4 text-uppercase">Descubra o que acontece na cidade</span>
-            <h1 class="display-4 text-primary">Próximos Eventos</h1>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-10">
-                <div class="dropdown-divider"></div> 
-                <table class="table table-hover table-responsive-md">
-                    <thead>
-                        <th>Data</th>
-                        <th>Evento</th>
-                        <th>Local</th>
-                        <th>Ticket</th>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th>23/10</th>
-                            <td>Julien Baker</td>
-                            <td>The Academy</td>
-                            <td><a class="btn btn-outline-secondary" href="">Comprar Ticket</a></td>
-                        </tr>
-                        <tr>
-                            <th>25/10</th>
-                            <td>Lucy Rose</td>
-                            <td>Olympia</td>
-                            <td><a class="btn btn-outline-secondary" href="">Comprar Ticket</a></td>
-                        </tr>
-                        <tr>
-                            <th>26/10</th>
-                            <td>Bon Iver</td>
-                            <td>Whealans</td>
-                            <td><a class="btn btn-outline-secondary" href="">Comprar Ticket</a></td>
-                        </tr>
-                        <tr>
-                            <th>23/10</th>
-                            <td>Lucy Rose</td>
-                            <td>Olympia</td>
-                            <td><a class="btn btn-outline-secondary" href="">Comprar Ticket</a></td>
-                        </tr>
-                        <tr>
-                            <th>25/10</th>
-                            <td>Bon Iver</td>
-                            <td>Whealans</td>
-                            <td><a class="btn btn-outline-secondary" href="">Comprar Ticket</a></td>
-                        </tr>
-                        <tr>
-                            <th>27/10</th>
-                            <td>Julien Baker</td>
-                            <td>The Academy</td>
-                            <td><a class="btn btn-outline-secondary" href="">Comprar Ticket</a></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </section>
-    <footer class="bg-dark text-light">
+        <footer class="bg-dark text-light">
         <div class="container py-4">
             <div class="row">
                 <div class="col-md-3 col-6">
